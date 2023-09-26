@@ -31,16 +31,11 @@ These are scripts that used to help run the game.
 
 | Script Name           | Description                                          |
 | --------------------- | ---------------------------------------------------- |
-| `main.py`              | The main script that initializes and runs the game.  |
-| `game_logic.py`       | Contains the game logic, scoring, and collision detection. |
-| `player.py`           | Manages player attributes and actions.               |
-| `ball.py`             | Handles ball movement and collisions.                |
-| `sound_manager.py`    | Controls in-game sound effects and music.            |
-| `settings.py`         | Stores configurable settings such as screen size and colors. |
-| `assets/`             | Directory containing game assets (images, sounds, etc.). |
-| `fonts/`              | Directory for custom fonts used in the game.         |
-| `README.md`           | Documentation on how to install and play the game.    |
-
+| `BallControl.cs`      | Controls the behavior of a ball, including its initial launch and how it interacts with player objects.  |
+| `GameManager.cs`      | Manages the scores of two players in a game, updates the UI to display the scores, and checks for a win condition where a player reaches a score of 20 to trigger a scene change to the main menu. |
+| `PlayerControls.cs`   | Allows the player object to move up and down within specified bounds using the "moveUp" and "moveDown" keys. The script continuously updates the player's position and velocity based on user input and ensures the player stays within the defined bounds.               |
+| `SceneManagement.cs`  | Allows for the switching of game scenes by providing the name of the target scene to the "ChangeScene" method. It also enables the player to exit the game application using the "QuitApp" method.       |
+| `SideWall.cs`         | Designed to be attached to side walls and serves for scoring by keeping track of when a ball collides with it, identifies the specific wall that was hit, and updates the player's score accordingly. It also can be used to restart the game by sending a message to the ball object to restart the game, possibly after a brief delay, by invoking the "RestartGame" method defined in the "BallControl" script.                 |
 
 
 ## Contributions
