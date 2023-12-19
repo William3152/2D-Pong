@@ -1,6 +1,6 @@
 # Glowing 2D Pong
 
-![Screenshot](screenshot.png)
+![2d pong](https://github.com/William3152/2D-Pong/assets/116702856/880813f2-86e2-4944-8b09-df22b46d5887)
 
 Glowing 2D Pong is a classic Pong game with a modern twist. 
 In this game, players can play against the other player in local multiplayer mode.
